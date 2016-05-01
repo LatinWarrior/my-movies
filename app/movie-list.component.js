@@ -36,6 +36,10 @@
                     id: id
                 }, 'Overview']);
         };
+        
+        model.setRating = function(movie, newRating){
+            movie.rating = newRating;
+        }
 
         model.upRating = function (movie) {
             if (movie.rating < 5) {
